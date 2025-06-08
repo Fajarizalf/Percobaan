@@ -1,0 +1,113 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Online Sederhana</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+/* styles.css */
+
+/* Reset dasar */
+
+{ margin: 0; padding: 0; box-sizing: border-box; }
+
+
+body { font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; background-color: #f9f9f9; color: #333; }
+
+header { background-color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+header h1 { font-size: 1.8rem; color: #222; }
+
+nav ul { list-style: none; display: flex; gap: 15px; }
+
+nav ul li a { text-decoration: none; color: #333; font-weight: bold; }
+
+.cart-icon { font-size: 1.5rem; }
+
+main { margin-top: 20px; }
+
+section { margin-bottom: 40px; }
+
+h2 { margin-bottom: 15px; font-size: 1.6rem; }
+
+.produk-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+
+.produk { background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s; }
+
+.produk:hover { transform: translateY(-5px); }
+
+.produk h3 { margin-bottom: 10px; }
+
+.harga { font-weight: bold; color: #e91e63; }
+
+footer { text-align: center; padding: 15px; background-color: #fff; box-shadow: 0 -2px 5px rgba(0,0,0,0.05); margin-top: 50px; }
+
+/* Responsif */ @media (max-width: 768px) { nav ul { flex-direction: column; gap: 10px; align-items: flex-start; }
+
+header { flex-direction: column; align-items: flex-start; } }
+
+
+<body>
+  <header>
+    <h1>TokoFRZ</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#keranjang">Keranjang</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="cart-icon">
+      🛒
+    </div>
+  </header>  <main>
+    <section id="produk">
+      <h2>Produk Terbaru</h2>
+      <div class="produk-container">
+        <article class="produk">
+          <h3>Sepatu Kets FRZ</h3>
+          <p>Sepatu ringan dan stylish untuk sehari-hari.</p>
+          <p class="harga">Rp350.000</p>
+        </article>
+        <article class="produk">
+          <h3>Hoodie Casual</h3>
+          <p>Hoodie hangat dengan desain minimalis.</p>
+          <p class="harga">Rp275.000</p>
+        </article>
+        <article class="produk">
+          <h3>Topi Snapback</h3>
+          <p>Topi keren dengan bahan berkualitas.</p>
+          <p class="harga">Rp150.000</p>
+        </article>
+        <article class="produk">
+          <h3>Tas Selempang</h3>
+          <p>Tas kecil yang praktis dan modis.</p>
+          <p class="harga">Rp180.000</p>
+        </article>
+        <article class="produk">
+          <h3>Kaos Oversize</h3>
+          <p>Kaos nyaman dengan potongan longgar.</p>
+          <p class="harga">Rp120.000</p>
+        </article>
+      </div>
+    </section><section id="kategori">
+  <h2>Kategori</h2>
+  <ul>
+    <li>Sepatu</li>
+    <li>Pakaian</li>
+    <li>Aksesoris</li>
+    <li>Tas</li>
+  </ul>
+</section>
+
+<section id="tentang">
+  <h2>Tentang Kami</h2>
+  <p>TokoFRZ adalah toko online yang menyediakan produk fashion kekinian dengan harga terjangkau dan kualitas terpercaya.</p>
+</section>
+
+  </main>  <footer>
+    <p>&copy; 2025 TokoFRZ. Semua Hak Dilindungi.</p>
+  </footer>
+</body>
+</html>
